@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="scriptfile.js"></script>
+</head>
+<body>
+
+    <h1>Javascript</h1>
+    <ul id="ul-list"></ul>
+
+    <table id="marksheet"></table>
+
+<!-- <tr id="td-data"></tr>
+<tr id="td-data2"></tr>
+<tr id="td-data3"></tr>
+<tr id="td-data4"></tr>
+<tr id="td-data5"></tr> -->
+</table>
+<script>
+
+
+let days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+
+// const ulList =document.getElementById('ul-list');
+//     const liList =document.createElement('li');
+//     liList.innerHTML = days;
+//     ulList.append(liList);
+
+//     const ulList2 =document.getElementById('ul-list');
+//     const liList2 =document.createElement('li');
+//     liList2.innerHTML = days;
+//     ulList2.append(liList2);
+
+//     const ulList3 =document.getElementById('ul-list');
+//     const liList3 =document.createElement('li');
+//     liList3.innerHTML = days;
+//     ulList3.append(liList3);
+
+//     const ulList4 =document.getElementById('ul-list');
+//     const liList4 =document.createElement('li');
+//     liList4.innerHTML = days;
+//     ulList4.append(liList4);
+
+//     const ulList5 =document.getElementById('ul-list');
+//     const liList5 =document.createElement('li');
+//     liList5.innerHTML = days;
+//     ulList5.append(liList5);
+
+const students = [
+    
+{name: "Awais Khan", fatherName: "Ashraf Khan", rollNumber: 1,result: "Pass"},
+{name: "Faizan Khan", fatherName: "Shahid Khan", rollNumber: 2,result: "Pass"},
+{name: "Shahzad", fatherName: "Khan", rollNumber: 3,result: "Pass"},
+{name: "Muneeb", fatherName: "Aftab", rollNumber: 4,result: "Pass"},
+{name: "Abdul", fatherName: "Bilal", rollNumber: 5,result: "Pass"},
+{name: "Mansoor", fatherName: "Rehman", rollNumber: 6,result: "Pass"},
+{name: "Nabeel", fatherName: "Aqeel", rollNumber: 7,result: "Pass"},
+{name: "Adeel", fatherName: "Aqeel", rollNumber: 8,result: "Pass"},
+{name: "Daniyal", fatherName: "Aftab", rollNumber: 9,result: "Pass"},
+{name: "Haris", fatherName: "Akhtar", rollNumber: 10,result: "Pass"}];
+
+
+    for(let i = 0; i< students.length; i++){
+ 
+    const tData = document.getElementById('marksheet');
+    const trData = document.createElement('tr');
+    const tdData = document.createElement('td');
+    const td2Data = document.createElement('td');
+
+    tdData.innerText =students[i].name;
+    td2Data.innerText =students[i].fatherName;
+
+    tData.append(trData);
+    trData.append(tdData,td2Data);
+
+}
+
+// const nameResult = document.getElementById('td-data');
+    // const nameData = document.createElement('td');
+    // nameData.innerHTML =markData[i];
+    // nameResult.append(nameData);
+
+    // const nameResult2 = document.getElementById('td-data2');
+    // const nameData2 = document.createElement('td');
+    // nameData2.innerHTML =markData2[i];
+    // nameResult2.append(nameData2);
+
+    // const nameResult3 = document.getElementById('td-data3');
+    // const nameData3 = document.createElement('td');
+    // nameData3.innerHTML =markData3[i];
+    // nameResult3.append(nameData3);
+
+    
+    // const nameResult4 = document.getElementById('td-data4');
+    // const nameData4 = document.createElement('td');
+    // nameData4.innerHTML =markData[i];
+    // nameResult4.append(nameData4);
+
+    // const nameResult5 = document.getElementById('td-data5');
+    // const nameData5 = document.createElement('td');
+    // nameData5.innerHTML =markData2[i];
+    // nameResult5.append(nameData5);
+
+
+
+</script>
+
+    
+</body>
+</html>
